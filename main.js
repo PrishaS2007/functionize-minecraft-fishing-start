@@ -32,17 +32,17 @@ function fishBtnClicked() {
   }
 }
 
-function catchFish(pB1, pB2, pB3) {
+function catchFish(p1, p2, p3) {
   let randNum = Math.random();
-    if (randNum < pB1) {
+    if (randNum < p1) {
       numCod++;
       numCodSpan.innerHTML = numCod;
       resultImg.src = 'img/Raw-Cod.png';
-    } else if (randNum < pB2) {
+    } else if (randNum < p2) {
       numSalmon++;
       numSalmonSpan.innerHTML = numSalmon;
       resultImg.src = 'img/Raw-Salmon.png';
-    } else if (randNum < pB3) {
+    } else if (randNum < p3) {
       numTropical++;
       numTropicalSpan.innerHTML = numTropical;
       resultImg.src = 'img/Tropical-Fish.png';
