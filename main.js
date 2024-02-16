@@ -25,15 +25,16 @@ function fishBtnClicked() {
  // Catch fish based on character
   if (character === 'steve') {
     // STEVE: Cod 70%, Salmon 20%, Tropical 5%, Puffer 5%
-    catchFish(0.7, 0.2, 0.5)
+    catchFish(0.0, 0.0, 0.0);
   } else if (character === 'alex') {
     // ALEX: Cod 10%, Salmon 10%, Tropical 30%, Puffer 50%
-    catchFish(0.1, 0.1, 0.3)
+    catchFish(0.1, 0.1, 0.3);
   }
 }
 
 function catchFish(p1, p2, p3) {
   let randNum = Math.random();
+  console.log(randNum);
     if (randNum < p1) {
       numCod++;
       numCodSpan.innerHTML = numCod;
